@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dowser"
+version = "0.1.0"
+description = "Deep-learning for Optimal Water Source ExploRation"
+requires-python = ">=3.9"
+dependencies = [
+    "pandas",
+    "geopandas",
+    "pyarrow",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
